@@ -1,5 +1,113 @@
+body {
+  background-color: #dadcde; }
+
 header {
   display: flex;
+  flex-direction: column;
   width: 100%; }
+  header a {
+    color: #d3d3d3;
+    font-family: "Pixelated";
+    text-decoration: none;
+    transition-duration: 0.4s;
+    transition-property: color; }
+  header a:hover,
+  header div:hover {
+    color: #4b515e;
+    transition-duration: 0.4s;
+    transition-property: color; }
+  header div {
+    background-color: #0e0f11;
+    color: #d3d3d3; }
+  header .black-nav-selectors {
+    display: flex;
+    flex-direction: row-reverse; }
+    header .black-nav-selectors a {
+      margin: 0 8px;
+      padding: 7px 0; }
+  header nav {
+    background-color: #d3d3d3;
+    -webkit-box-shadow: 0px 0px 6px 0px #4b515e;
+    -moz-box-shadow: 0px 0px 6px 0px #4b515e;
+    box-shadow: 0px 0px 6px 0px #4b515e; }
+    header nav .white-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+    header nav div {
+      background-color: #d3d3d3; }
+      header nav div a {
+        color: #4b515e;
+        transition-duration: 0.4s;
+        transition-property: color; }
+        header nav div a img {
+          margin-right: 4px; }
+      header nav div a:hover {
+        color: #283da7;
+        transition-duration: 0.4s;
+        transition-property: color; }
+
+main {
+  display: flex;
+  flex-direction: column; }
+  main .welcome {
+    color: #283da7;
+    text-shadow: 2px 2px 4px #d3d3d3;
+    position: relative;
+    height: 512px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 15vh; }
+    main .welcome h2 {
+      font-family: "ArcadeClassic";
+      font-size: 32px;
+      line-height: 0.8em; }
+    main .welcome h1 {
+      font-family: "ArcadeClassic";
+      font-size: 100px;
+      line-height: 0.6em; }
+    main .welcome p {
+      margin-top: 5vh;
+      font-family: "pix PixelFJVerdana12pt";
+      font-size: 8px;
+      line-height: 1.8em; }
+  main .welcome::after {
+    content: "";
+    background: url("../img/yin-yang-build.jpg");
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
+
+.page-max-width {
+  width: 100vw;
+  max-width: 1272px;
+  margin: 0 auto; }
+
+.nav-logo {
+  margin: 8px 4px; }
+
+.nav-logo img {
+  float: left; }
+
+.white-nav-selectors a {
+  margin-left: 5vw; }
+
+.white-nav-selectors a:last-of-type {
+  padding: 8px 16px;
+  border: 3px solid #283da7;
+  background-color: #d3d3d3;
+  transition-duration: 0.4s;
+  transition-property: padding, color, border-color; }
+
+.white-nav-selectors a:last-of-type:hover {
+  padding: 24px 16px;
+  color: #5d74d6;
+  border-color: #5d74d6;
+  transition-property: padding, color, border-color; }
 
 /*# sourceMappingURL=style.css.map */
