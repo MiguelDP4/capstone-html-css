@@ -1,9 +1,180 @@
-$color-main: #132aa2;
+$color-main-light: #5d74d6;
+$color-main: #283da7;
+$color-main-dark: #273579;
+$color-secondary-light: #4b515e;
 $color-secondary: #272a31;
+$color-secondary: #0e0f11;
 $color-light: #d3d3d3;
+$color-background: #dadcde;
+$color-background-effect: rgba(0, 135, 24, 0.5);
+
+$font-links: 'Pixelated';
+$font-titles: 'ArcadeClassic';
+$font-paragraphs: 'pix PixelFJVerdana12pt';
+
+$font-paragraph-size: 8px;
+
+$font-small-title-size: 24px;
+$font-medium-title-size: 32px;
+$font-big-title-size: 48px;
+$font-huge-title-size: 100px;
+
+$transition-fast: 0.1s;
+$transition-medium: 0.4s;
+$transition-slow: 1.0s;
+
+body {
+  background-color: $color-background;
+}
 
 header {
   display: flex;
+  flex-direction: column;
   width: 100%;
+
+  a {
+    color: $color-light;
+    font-family: $font-links;
+    text-decoration: none;
+    transition-duration: $transition-medium;
+    transition-property: color;
+  }
+
+  a:hover,
+  div:hover {
+    color: $color-secondary-light;
+    transition-duration: $transition-medium;
+    transition-property: color;
+  }
+
+  div {
+    background-color: $color-secondary;
+    color: $color-light;
+  }
+
+  .black-nav-selectors {
+    display: flex;
+    flex-direction: row-reverse;
+
+    a {
+      margin: 0 8px;
+      padding: 7px 0;
+    }
+  }
+
+  nav {
+    background-color: $color-light;
+    -webkit-box-shadow: 0px 0px 6px 0px $color-secondary-light;
+    -moz-box-shadow: 0px 0px 6px 0px $color-secondary-light;
+    box-shadow: 0px 0px 6px 0px $color-secondary-light;
+
+    .white-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    div {
+      background-color: $color-light;
+
+      a {
+        color: $color-secondary-light;
+        transition-duration: $transition-medium;
+        transition-property: color;
+
+        img {
+          margin-right: 4px;
+        }
+      }
+
+      a:hover {
+        color: $color-main;
+        transition-duration: $transition-medium;
+        transition-property: color;
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  .welcome {
+    color: $color-main;
+    text-shadow: 2px 2px 4px $color-light;
+    position: relative;
+    height: 512px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 15vh;
+    h2 {
+      font-family: $font-titles;
+      font-size: $font-medium-title-size;
+      line-height: 0.8em;
+    }
+
+    h1 {
+      font-family: $font-titles;
+      font-size: $font-huge-title-size;
+      line-height: 0.6em;
+    }
+
+    p {
+      margin-top: 5vh;
+      font-family: $font-paragraphs;
+      font-size: $font-paragraph-size;
+      line-height: 1.8em;
+    }
+  }
+
+  .welcome::after {
+    content: "";
+    background: url("../img/yin-yang-build.jpg");
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.page-max-width {
+  width: 100vw;
+  max-width: 1272px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  margin: 8px 4px;
+}
+
+.nav-logo img {
+  float: left;
+}
+
+.white-nav-selectors a {
+  margin-left: 5vw;
+}
+
+.white-nav-selectors a:last-of-type {
+  padding: 8px 16px;
+  border: 3px solid $color-main;
+  background-color: $color-light;
+  transition-duration: $transition-medium;
+  transition-property: padding, color, border-color;
+}
+
+.white-nav-selectors a:last-of-type:hover {
+  padding: 24px 16px;
+  color: $color-main-light;
+  border-color: $color-main-light;
+  transition-property: padding, color, border-color;
+}
+
+@media screen and (max-width: 768px) {
   
 }
