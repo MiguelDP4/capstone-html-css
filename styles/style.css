@@ -1,3 +1,15 @@
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  background: #dadcde; }
+
+::-webkit-scrollbar-thumb {
+  background: #283da7; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #273579; }
+
 body {
   background-color: #dadcde; }
 
@@ -48,17 +60,19 @@ header {
         transition-duration: 0.4s;
         transition-property: color; }
 
+.menu-icon {
+  display: none; }
+
 main {
   display: flex;
   flex-direction: column; }
   main .welcome {
+    display: flex;
+    flex-direction: column;
     color: #283da7;
-    text-shadow: 2px 2px 4px #d3d3d3;
+    text-shadow: 2px 2px 4px #273579;
     position: relative;
-    height: 512px;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 15vh; }
+    height: 512px; }
     main .welcome h2 {
       font-family: "ArcadeClassic";
       font-size: 32px;
@@ -68,14 +82,20 @@ main {
       font-size: 100px;
       line-height: 0.6em; }
     main .welcome p {
-      margin-top: 5vh;
+      margin-top: 20vh;
       font-family: "pix PixelFJVerdana12pt";
-      font-size: 8px;
+      font-size: 10px;
       line-height: 1.8em; }
+    main .welcome div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding-left: 5vw; }
   main .welcome::after {
     content: "";
     background: url("../img/yin-yang-build.jpg");
-    opacity: 0.1;
+    background-size: cover;
+    opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -84,7 +104,7 @@ main {
     z-index: -1; }
 
 .page-max-width {
-  width: 100vw;
+  width: 100%;
   max-width: 1272px;
   margin: 0 auto; }
 
@@ -94,20 +114,39 @@ main {
 .nav-logo img {
   float: left; }
 
+.white-nav-selectors {
+  margin-right: 3vw; }
+
 .white-nav-selectors a {
   margin-left: 5vw; }
 
-.white-nav-selectors a:last-of-type {
+.white-nav-selectors a:nth-child(6) {
   padding: 8px 16px;
   border: 3px solid #283da7;
   background-color: #d3d3d3;
   transition-duration: 0.4s;
   transition-property: padding, color, border-color; }
 
-.white-nav-selectors a:last-of-type:hover {
+.white-nav-selectors a:nth-child(6):hover {
   padding: 24px 16px;
   color: #5d74d6;
   border-color: #5d74d6;
   transition-property: padding, color, border-color; }
+
+@media screen and (max-width: 768px) {
+  .black-nav {
+    display: none; }
+
+  .white-nav-selectors a {
+    display: none; }
+
+  .white-nav-selectors a:last-of-type {
+    display: inline; }
+
+  .menu-icon svg {
+    width: 32px;
+    height: auto; }
+    .menu-icon svg rect {
+      fill: #4b515e; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,7 +12,7 @@ $font-links: 'Pixelated';
 $font-titles: 'ArcadeClassic';
 $font-paragraphs: 'pix PixelFJVerdana12pt';
 
-$font-paragraph-size: 8px;
+$font-paragraph-size: 10px;
 
 $font-small-title-size: 24px;
 $font-medium-title-size: 32px;
@@ -22,6 +22,22 @@ $font-huge-title-size: 100px;
 $transition-fast: 0.1s;
 $transition-medium: 0.4s;
 $transition-slow: 1.0s;
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $color-background; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: $color-main; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $color-main-dark; 
+}
 
 body {
   background-color: $color-background;
@@ -97,18 +113,21 @@ header {
   }
 }
 
+.menu-icon {
+  display: none;
+}
+
 main {
   display: flex;
   flex-direction: column;
 
   .welcome {
+    display: flex;
+    flex-direction: column;
     color: $color-main;
-    text-shadow: 2px 2px 4px $color-light;
+    text-shadow: 2px 2px 4px $color-main-dark;
     position: relative;
     height: 512px;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 15vh;
     h2 {
       font-family: $font-titles;
       font-size: $font-medium-title-size;
@@ -122,17 +141,24 @@ main {
     }
 
     p {
-      margin-top: 5vh;
+      margin-top: 20vh;
       font-family: $font-paragraphs;
       font-size: $font-paragraph-size;
       line-height: 1.8em;
+    }
+    div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding-left: 5vw;
     }
   }
 
   .welcome::after {
     content: "";
     background: url("../img/yin-yang-build.jpg");
-    opacity: 0.1;
+    background-size: cover;
+    opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -143,7 +169,7 @@ main {
 }
 
 .page-max-width {
-  width: 100vw;
+  width: 100%;
   max-width: 1272px;
   margin: 0 auto;
 }
@@ -156,11 +182,15 @@ main {
   float: left;
 }
 
+.white-nav-selectors {
+  margin-right: 3vw;
+}
+
 .white-nav-selectors a {
   margin-left: 5vw;
 }
 
-.white-nav-selectors a:last-of-type {
+.white-nav-selectors a:nth-child(6) {
   padding: 8px 16px;
   border: 3px solid $color-main;
   background-color: $color-light;
@@ -168,7 +198,7 @@ main {
   transition-property: padding, color, border-color;
 }
 
-.white-nav-selectors a:last-of-type:hover {
+.white-nav-selectors a:nth-child(6):hover {
   padding: 24px 16px;
   color: $color-main-light;
   border-color: $color-main-light;
@@ -176,5 +206,25 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  
+  .black-nav {
+    display: none;
+  }
+
+  .white-nav-selectors a {
+    display: none;
+  }
+
+  .white-nav-selectors a:last-of-type {
+    display: inline;
+  }
+
+  .menu-icon {
+    svg {
+      width: 32px;
+      height: auto;
+      rect {
+        fill: $color-secondary-light;
+      }
+    }
+  }
 }
