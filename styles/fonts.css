@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Regular.woff2') format('woff2'),
+        url('Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('Cocogoose.woff2') format('woff2'),
+        url('Cocogoose.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
