@@ -219,6 +219,8 @@ main {
 
   div {
     flex: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   h1 {
@@ -234,9 +236,15 @@ main {
     text-shadow: 1px 1px 2px $color-main-light;
   }
 
-  a {
+  div a {
+    text-decoration: none;
     font-family: $font-links;
     color: $color-light;
+  }
+
+  div a:hover {
+    text-decoration: underline $color-main-light;
+    cursor: pointer;
   }
 
   p {
@@ -274,8 +282,69 @@ main {
     border: solid 3px $color-main;
     padding: 5px;
   }
+}
 
-  h2 {}
+.featured-players {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  h1 {
+    font-family: $font-titles;
+    font-size: $font-big-title-size;
+    color: $color-main;
+    text-shadow: 1px 1px 2px $color-main-light;
+    padding-bottom: 20px;
+    text-decoration: underline;
+  }
+  .players {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .player {
+      display: flex;
+      flex-direction: row;
+      width: 450px;
+      padding: 5px;
+
+      div:first-of-type {
+        flex: 1;
+      }
+      div:last-of-type {
+        flex: 2;
+        margin-left: 12px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        image-rendering: pixelated;
+      }
+      h2 {
+        font-family: $font-titles;
+        font-size: $font-small-title-size;
+        color: $color-main;
+        text-shadow: 1px 1px 2px $color-main-light;
+        margin-bottom: 10px;
+      }
+      p:first-of-type {
+        font-family: $font-paragraphs;
+        font-size: $font-paragraphs-size-small;
+        line-height: 1.8em;
+        color: $color-main;
+        margin-bottom: 10px;
+      }
+      p:last-of-type {
+        font-family: $font-paragraphs;
+        font-size: $font-paragraphs-size-small;
+        line-height: 1.8em;
+        color: $color-secondary;
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 1140px) {
