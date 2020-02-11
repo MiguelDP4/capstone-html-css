@@ -1,39 +1,34 @@
 @font-face {
   font-family: 'Pixelated';
-  src: url('Pixelated.woff2') format('woff2'),
-    url('Pixelated.woff') format('woff');
+  src: url('Pixelated.woff2') format('woff2'), url('Pixelated.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('Lato-Regular.woff2') format('woff2'),
-    url('Lato-Regular.woff') format('woff');
+  src: url('Lato-Regular.woff2') format('woff2'), url('Lato-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'pix PixelFJVerdana12pt';
-  src: url('pixPixelFJVerdana12pt.woff2') format('woff2'),
-    url('pixPixelFJVerdana12pt.woff') format('woff');
+  src: url('pixPixelFJVerdana12pt.woff2') format('woff2'), url('pixPixelFJVerdana12pt.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ArcadeClassic';
-  src: url('ArcadeClassic.woff2') format('woff2'),
-    url('ArcadeClassic.woff') format('woff');
+  src: url('ArcadeClassic.woff2') format('woff2'), url('ArcadeClassic.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cocogoose';
-  src: url('Cocogoose.woff2') format('woff2'),
-    url('Cocogoose.woff') format('woff');
+  src: url('Cocogoose.woff2') format('woff2'), url('Cocogoose.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
