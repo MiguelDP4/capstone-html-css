@@ -5,7 +5,7 @@
   background: #dadcde; }
 
 ::-webkit-scrollbar-thumb {
-  background: #283da7; }
+  background: #1a36c0; }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #273579; }
@@ -56,7 +56,7 @@ header {
         header nav div a img {
           margin-right: 4px; }
       header nav div a:hover {
-        color: #283da7;
+        color: #1a36c0;
         transition-duration: 0.4s;
         transition-property: color; }
 
@@ -69,7 +69,7 @@ main {
   main .welcome {
     display: flex;
     flex-direction: column;
-    color: #283da7;
+    color: #1a36c0;
     text-shadow: 2px 2px 4px #273579;
     position: relative;
     height: 512px; }
@@ -122,7 +122,7 @@ main {
 
 .white-nav-selectors a:nth-child(6) {
   padding: 8px 16px;
-  border: 3px solid #283da7;
+  border: 3px solid #1a36c0;
   background-color: #d3d3d3;
   transition-duration: 0.4s;
   transition-property: padding, color, border-color; }
@@ -133,6 +133,61 @@ main {
   border-color: #5d74d6;
   transition-property: padding, color, border-color; }
 
+.games {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0e0f11 url("../img/pattern-gray.svg"); }
+  .games div {
+    flex: 1; }
+  .games h1 {
+    font-family: "ArcadeClassic";
+    font-size: 48px;
+    color: #d3d3d3; }
+  .games h2 {
+    font-family: "ArcadeClassic";
+    font-size: 24px;
+    color: #1a36c0;
+    text-shadow: 1px 1px 2px #5d74d6; }
+  .games a {
+    font-family: "Pixelated";
+    color: #d3d3d3; }
+  .games p {
+    font-family: "pix PixelFJVerdana12pt";
+    font-size: 8px;
+    line-height: 1.8em;
+    color: #d3d3d3; }
+
+.server-sections {
+  display: flex;
+  flex-direction: row;
+  width: 80%; }
+  .server-sections div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: rgba(200, 200, 200, 0.3);
+    padding: 8px;
+    margin: 8px;
+    transition-property: background-color;
+    transition-duration: 0.4s; }
+    .server-sections div img {
+      width: 25%;
+      height: auto; }
+  .server-sections div:hover {
+    background-color: #5d74d6;
+    border: solid 3px #1a36c0;
+    padding: 5px; }
+
+@media screen and (max-width: 1140px) {
+  .server-sections {
+    width: 100%; } }
+@media screen and (max-width: 916px) {
+  .server-sections h2 {
+    font-size: 16px; }
+  .server-sections p {
+    font-size: 6px; } }
 @media screen and (max-width: 768px) {
   .black-nav {
     display: none; }
@@ -147,6 +202,13 @@ main {
     width: 32px;
     height: auto; }
     .menu-icon svg rect {
-      fill: #4b515e; } }
+      fill: #4b515e; }
+
+  .server-sections {
+    flex-direction: column; }
+    .server-sections h2 {
+      font-size: 24px; }
+    .server-sections p {
+      font-size: 8px; } }
 
 /*# sourceMappingURL=style.css.map */
