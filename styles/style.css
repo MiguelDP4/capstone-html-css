@@ -26,7 +26,7 @@ header {
 
 header a {
   color: #d3d3d3;
-  font-family: "Lato";
+  font-family: "Lato", Arial, sans-serif;
   text-decoration: none;
   transition-duration: 0.4s;
   transition-property: color;
@@ -56,9 +56,9 @@ header .black-nav-selectors a {
 
 header nav {
   background-color: #d3d3d3;
-  -webkit-box-shadow: 0px 0px 6px 0px #434957;
-  -moz-box-shadow: 0px 0px 6px 0px #434957;
-  box-shadow: 0px 0px 6px 0px #434957;
+  -webkit-box-shadow: 0 0 6px 0 #434957;
+  -moz-box-shadow: 0 0 6px 0 #434957;
+  box-shadow: 0 0 6px 0 #434957;
 }
 
 header nav .white-nav {
@@ -107,18 +107,18 @@ main .welcome {
 }
 
 main .welcome h2 {
-  font-family: "Cocogoose";
+  font-family: "Cocogoose", Arial, sans-serif;
   font-size: 24px;
 }
 
 main .welcome h1 {
-  font-family: "Cocogoose";
+  font-family: "Cocogoose", Arial, sans-serif;
   font-size: 48px;
 }
 
 main .welcome p {
   margin-top: 20vh;
-  font-family: "Lato";
+  font-family: "Lato", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.8em;
 }
@@ -194,13 +194,13 @@ main .welcome::after {
 }
 
 .games h1 {
-  font-family: "Cocogoose";
+  font-family: "Cocogoose", Arial, sans-serif;
   font-size: 32px;
   color: #d3d3d3;
 }
 
 .games h2 {
-  font-family: "Cocogoose";
+  font-family: "Cocogoose", Arial, sans-serif;
   font-size: 18px;
   color: #ec5242;
   text-shadow: 1px 1px 2px #f07a6d;
@@ -208,7 +208,7 @@ main .welcome::after {
 
 .games div a {
   text-decoration: none;
-  font-family: "Lato";
+  font-family: "Lato", Arial, sans-serif;
   color: #d3d3d3;
 }
 
@@ -218,7 +218,7 @@ main .welcome::after {
 }
 
 .games p {
-  font-family: "Lato";
+  font-family: "Lato", Arial, sans-serif;
   font-size: 12px;
   line-height: 1.8em;
   color: #d3d3d3;
@@ -270,7 +270,7 @@ main .welcome::after {
 }
 
 .featured-players h1 {
-  font-family: "Cocogoose";
+  font-family: "Cocogoose", Arial, sans-serif;
   font-size: 32px;
   color: #ec5242;
   text-shadow: 1px 1px 2px #f07a6d;
@@ -316,7 +316,7 @@ main .welcome::after {
 }
 
 .featured-players .players .player h2 {
-  font-family: "Cocogoose";
+  font-family: "Cocogoose", Arial, sans-serif;
   font-size: 18px;
   color: #ec5242;
   text-shadow: 1px 1px 2px #f07a6d;
@@ -324,7 +324,7 @@ main .welcome::after {
 }
 
 .featured-players .players .player p:first-of-type {
-  font-family: "Lato";
+  font-family: "Lato", Arial, sans-serif;
   font-size: 12px;
   line-height: 1.8em;
   color: #ec5242;
@@ -332,7 +332,7 @@ main .welcome::after {
 }
 
 .featured-players .players .player p:last-of-type {
-  font-family: "Lato";
+  font-family: "Lato", Arial, sans-serif;
   font-size: 12px;
   line-height: 1.8em;
   color: #272a31;
@@ -351,7 +351,7 @@ main .welcome::after {
 }
 
 .partners div h1 {
-  font-family: "Cocogoose";
+  font-family: "Cocogoose", Arial, sans-serif;
   font-size: 32px;
   color: #ec5242;
   text-shadow: 1px 1px 2px #f07a6d;
@@ -400,7 +400,7 @@ main .welcome::after {
 }
 
 .creative-commons p {
-  font-family: "Lato";
+  font-family: "Lato", Arial, sans-serif;
 }
 
 .creative-commons-gray {
@@ -426,7 +426,7 @@ main .welcome::after {
 }
 
 .creative-commons-gray p {
-  font-family: "Lato";
+  font-family: "Lato", Arial, sans-serif;
   color: #d3d3d3;
 }
 
@@ -446,20 +446,20 @@ main .welcome::after {
   padding-top: 80px;
   padding-bottom: 40px;
   margin: 0 auto;
-  font-family: "Cocogoose";
+  font-family: "Cocogoose", Arial, sans-serif;
   color: #ec5242;
   font-size: 48px;
 }
 
 .about-page h2 {
-  font-family: "Lato";
+  font-family: "Lato", Arial, sans-serif;
   font-size: 24px;
   font-weight: bold;
   padding-bottom: 45px;
 }
 
 .about-page p {
-  font-family: "Lato";
+  font-family: "Lato", Arial, sans-serif;
   color: #181a1f;
   line-height: 1.8em;
   width: 85%;
@@ -496,7 +496,7 @@ main .welcome::after {
 }
 
 .about-page .construction-container h2 {
-  font-family: "Lato";
+  font-family: "Lato", Arial, sans-serif;
   text-shadow: 2px 2px 4px #d3d3d3;
   position: absolute;
   top: 50%;
@@ -509,7 +509,7 @@ main .welcome::after {
 }
 
 .memberships-title h1 {
-  font-family: "Cocogoose";
+  font-family: "Cocogoose", Arial, sans-serif;
   font-size: 48px;
   padding-top: 50px;
 }
@@ -521,7 +521,7 @@ main .welcome::after {
 }
 
 .membership-purchase h2 {
-  font-family: "Lato";
+  font-family: "Lato", Arial, sans-serif;
   font-size: 24px;
   font-weight: bold;
   border-top: 1px solid #aaa;
@@ -537,7 +537,7 @@ main .welcome::after {
 .membership-purchase p,
 .membership-purchase span,
 .membership-purchase a {
-  font-family: "Lato";
+  font-family: "Lato", Arial, sans-serif;
 }
 
 .membership-purchase .membership-selection {
@@ -548,7 +548,7 @@ main .welcome::after {
 }
 
 .membership-purchase .membership-selection table {
-  font-family: "Lato";
+  font-family: "Lato", Arial, sans-serif;
   width: 100%;
 }
 
@@ -563,8 +563,8 @@ main .welcome::after {
 }
 
 .membership-purchase .kits {
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
   padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
