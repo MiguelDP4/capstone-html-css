@@ -5,10 +5,10 @@
   background: #dadcde; }
 
 ::-webkit-scrollbar-thumb {
-  background: #1a36c0; }
+  background: #ec5242; }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #273579; }
+  background: #742820; }
 
 body {
   background-color: #dadcde; }
@@ -19,17 +19,17 @@ header {
   width: 100%; }
   header a {
     color: #d3d3d3;
-    font-family: "Pixelated";
+    font-family: "Lato";
     text-decoration: none;
     transition-duration: 0.4s;
     transition-property: color; }
   header a:hover,
   header div:hover {
-    color: #4b515e;
+    color: #434957;
     transition-duration: 0.4s;
     transition-property: color; }
   header div {
-    background-color: #0e0f11;
+    background-color: #272a31;
     color: #d3d3d3; }
   header .black-nav-selectors {
     display: flex;
@@ -39,9 +39,9 @@ header {
       padding: 7px 0; }
   header nav {
     background-color: #d3d3d3;
-    -webkit-box-shadow: 0px 0px 6px 0px #4b515e;
-    -moz-box-shadow: 0px 0px 6px 0px #4b515e;
-    box-shadow: 0px 0px 6px 0px #4b515e; }
+    -webkit-box-shadow: 0px 0px 6px 0px #434957;
+    -moz-box-shadow: 0px 0px 6px 0px #434957;
+    box-shadow: 0px 0px 6px 0px #434957; }
     header nav .white-nav {
       display: flex;
       flex-direction: row;
@@ -50,13 +50,13 @@ header {
     header nav div {
       background-color: #d3d3d3; }
       header nav div a {
-        color: #4b515e;
+        color: #434957;
         transition-duration: 0.4s;
         transition-property: color; }
         header nav div a img {
           margin-right: 4px; }
       header nav div a:hover {
-        color: #1a36c0;
+        color: #ec5242;
         transition-duration: 0.4s;
         transition-property: color; }
 
@@ -69,22 +69,20 @@ main {
   main .welcome {
     display: flex;
     flex-direction: column;
-    color: #1a36c0;
-    text-shadow: 2px 2px 4px #273579;
+    color: #ec5242;
+    text-shadow: 2px 2px 4px #742820;
     position: relative;
     height: 512px; }
     main .welcome h2 {
-      font-family: "ArcadeClassic";
-      font-size: 32px;
-      line-height: 0.8em; }
+      font-family: "Cocogoose";
+      font-size: 24px; }
     main .welcome h1 {
-      font-family: "ArcadeClassic";
-      font-size: 100px;
-      line-height: 0.6em; }
+      font-family: "Cocogoose";
+      font-size: 48px; }
     main .welcome p {
       margin-top: 20vh;
-      font-family: "pix PixelFJVerdana12pt";
-      font-size: 10px;
+      font-family: "Lato";
+      font-size: 14px;
       line-height: 1.8em; }
     main .welcome div {
       flex: 1;
@@ -122,45 +120,45 @@ main {
 
 .white-nav-selectors a:nth-child(6) {
   padding: 8px 16px;
-  border: 3px solid #1a36c0;
+  border: 3px solid #ec5242;
   background-color: #d3d3d3;
   transition-duration: 0.4s;
   transition-property: padding, color, border-color; }
 
 .white-nav-selectors a:nth-child(6):hover {
   padding: 24px 16px;
-  color: #5d74d6;
-  border-color: #5d74d6;
+  color: #f07a6d;
+  border-color: #f07a6d;
   transition-property: padding, color, border-color; }
 
 .games {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #0e0f11 url("../img/pattern-gray.svg"); }
+  background: #272a31 url("../img/pattern-gray.svg"); }
   .games div {
     flex: 1;
     padding-top: 15px;
     padding-bottom: 15px; }
   .games h1 {
-    font-family: "ArcadeClassic";
-    font-size: 48px;
+    font-family: "Cocogoose";
+    font-size: 32px;
     color: #d3d3d3; }
   .games h2 {
-    font-family: "ArcadeClassic";
-    font-size: 24px;
-    color: #1a36c0;
-    text-shadow: 1px 1px 2px #5d74d6; }
+    font-family: "Cocogoose";
+    font-size: 18px;
+    color: #ec5242;
+    text-shadow: 1px 1px 2px #f07a6d; }
   .games div a {
     text-decoration: none;
-    font-family: "Pixelated";
+    font-family: "Lato";
     color: #d3d3d3; }
   .games div a:hover {
-    text-decoration: underline #5d74d6;
+    text-decoration: underline #f07a6d;
     cursor: pointer; }
   .games p {
-    font-family: "pix PixelFJVerdana12pt";
-    font-size: 8px;
+    font-family: "Lato";
+    font-size: 12px;
     line-height: 1.8em;
     color: #d3d3d3; }
 
@@ -182,8 +180,8 @@ main {
       width: 25%;
       height: auto; }
   .server-sections div:hover {
-    background-color: #5d74d6;
-    border: solid 3px #1a36c0;
+    background-color: #f07a6d;
+    border: solid 3px #ec5242;
     padding: 5px; }
 
 .featured-players {
@@ -192,10 +190,10 @@ main {
   align-items: center;
   padding-top: 30px; }
   .featured-players h1 {
-    font-family: "ArcadeClassic";
-    font-size: 48px;
-    color: #1a36c0;
-    text-shadow: 1px 1px 2px #5d74d6;
+    font-family: "Cocogoose";
+    font-size: 32px;
+    color: #ec5242;
+    text-shadow: 1px 1px 2px #f07a6d;
     padding-bottom: 20px;
     text-decoration: underline; }
   .featured-players .players {
@@ -218,33 +216,52 @@ main {
       .featured-players .players .player img {
         width: 100%;
         height: auto;
-        image-rendering: pixelated; }
+        image-rendering: pixelated;
+        transition-property: transform;
+        transition-duration: 0.1s; }
+      .featured-players .players .player img:hover {
+        transform: scale(1.5); }
       .featured-players .players .player h2 {
-        font-family: "ArcadeClassic";
-        font-size: 24px;
-        color: #1a36c0;
-        text-shadow: 1px 1px 2px #5d74d6;
+        font-family: "Cocogoose";
+        font-size: 18px;
+        color: #ec5242;
+        text-shadow: 1px 1px 2px #f07a6d;
         margin-bottom: 10px; }
       .featured-players .players .player p:first-of-type {
-        font-family: "pix PixelFJVerdana12pt";
-        font-size: 8px;
+        font-family: "Lato";
+        font-size: 12px;
         line-height: 1.8em;
-        color: #1a36c0;
+        color: #ec5242;
         margin-bottom: 10px; }
       .featured-players .players .player p:last-of-type {
-        font-family: "pix PixelFJVerdana12pt";
-        font-size: 8px;
+        font-family: "Lato";
+        font-size: 12px;
         line-height: 1.8em;
-        color: #0e0f11; }
+        color: #272a31; }
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #3b3a4b; }
+  .partners div {
+    flex: 1; }
+    .partners div h1 {
+      font-family: "Cocogoose";
+      font-size: 32px;
+      color: #d3d3d3;
+      text-shadow: 1px 1px 2px #f07a6d;
+      padding-bottom: 20px;
+      text-decoration: underline; }
 
 @media screen and (max-width: 1140px) {
   .server-sections {
     width: 100%; } }
 @media screen and (max-width: 916px) {
   .server-sections h2 {
-    font-size: 16px; }
+    font-size: 12px; }
   .server-sections p {
-    font-size: 6px; } }
+    font-size: 8px; } }
 @media screen and (max-width: 768px) {
   .black-nav {
     display: none; }
@@ -259,13 +276,13 @@ main {
     width: 32px;
     height: auto; }
     .menu-icon svg rect {
-      fill: #4b515e; }
+      fill: #434957; }
 
   .server-sections {
     flex-direction: column; }
     .server-sections h2 {
-      font-size: 24px; }
+      font-size: 18px; }
     .server-sections p {
-      font-size: 8px; } }
+      font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */
