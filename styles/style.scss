@@ -392,6 +392,26 @@ main {
   }
 }
 
+.creative-commons {
+  background-color: $color-background;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  height: 144px;
+  div {
+    flex: 1;
+    height: auto;
+    margin: auto;
+    padding: 0 15px;
+  }
+  .cc-logo {
+    text-align: right;
+    height: auto;
+    margin: auto;
+  }
+}
+
 @media screen and (max-width: 1140px) {
   .server-sections {
     width: 100%;
