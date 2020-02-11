@@ -1,27 +1,27 @@
-$color-main-light: #5d74d6;
-$color-main: #1a36c0;
-$color-main-dark: #273579;
-$color-secondary-light: #4b515e;
+$color-main-light: #f07a6d;
+$color-main: #ec5242;
+$color-main-dark: #742820;
+$color-secondary-light: #434957;
 $color-secondary: #272a31;
-$color-secondary: #0e0f11;
+$color-secondary-dark: #181a1f;
 $color-light: #d3d3d3;
 $color-background: #dadcde;
-$color-background-effect: rgba(0, 135, 24, 0.5);
+$color-background-dark: #3b3a4b;
 
-$font-links: 'Pixelated';
-$font-titles: 'ArcadeClassic';
-$font-paragraphs: 'pix PixelFJVerdana12pt';
+$font-links: 'Lato';
+$font-titles: 'Cocogoose';
+$font-paragraphs: 'Lato';
 
-$font-paragraph-size: 10px;
-$font-paragraphs-size-small: 8px;
-$font-paragraphs-size-extra-small: 6px;
+$font-paragraph-size: 14px;
+$font-paragraphs-size-small: 12px;
+$font-paragraphs-size-extra-small: 8px;
 
 
-$font-extra-small-title-size: 16px;
-$font-small-title-size: 24px;
-$font-medium-title-size: 32px;
-$font-big-title-size: 48px;
-$font-huge-title-size: 100px;
+$font-extra-small-title-size: 12px;
+$font-small-title-size: 18px;
+$font-medium-title-size: 24px;
+$font-big-title-size: 32px;
+$font-huge-title-size: 48px;
 
 $transition-fast: 0.1s;
 $transition-medium: 0.4s;
@@ -136,13 +136,11 @@ main {
     h2 {
       font-family: $font-titles;
       font-size: $font-medium-title-size;
-      line-height: 0.8em;
     }
 
     h1 {
       font-family: $font-titles;
       font-size: $font-huge-title-size;
-      line-height: 0.6em;
     }
 
     p {
@@ -259,6 +257,7 @@ main {
   display: flex;
   flex-direction: row;
   width: 80%;
+
   div {
     display: flex;
     flex-direction: column;
@@ -284,10 +283,11 @@ main {
 }
 
 .featured-players {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
+
   h1 {
     font-family: $font-titles;
     font-size: $font-big-title-size;
@@ -296,6 +296,7 @@ main {
     padding-bottom: 20px;
     text-decoration: underline;
   }
+
   .players {
     width: 80%;
     margin: 0 auto;
@@ -303,6 +304,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
     .player {
       display: flex;
       flex-direction: row;
@@ -312,15 +314,24 @@ main {
       div:first-of-type {
         flex: 1;
       }
+
       div:last-of-type {
         flex: 2;
         margin-left: 12px;
       }
+
       img {
         width: 100%;
         height: auto;
         image-rendering: pixelated;
+        transition-property: transform;
+        transition-duration: $transition-fast;
       }
+
+      img:hover {
+        transform: scale(1.5);
+      }
+
       h2 {
         font-family: $font-titles;
         font-size: $font-small-title-size;
@@ -328,6 +339,7 @@ main {
         text-shadow: 1px 1px 2px $color-main-light;
         margin-bottom: 10px;
       }
+
       p:first-of-type {
         font-family: $font-paragraphs;
         font-size: $font-paragraphs-size-small;
@@ -335,6 +347,7 @@ main {
         color: $color-main;
         margin-bottom: 10px;
       }
+
       p:last-of-type {
         font-family: $font-paragraphs;
         font-size: $font-paragraphs-size-small;
@@ -343,7 +356,24 @@ main {
       }
     }
   }
+}
 
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $color-background-dark;
+  div {
+    flex:1;
+    h1 {
+      font-family: $font-titles;
+      font-size: $font-big-title-size;
+      color: $color-light;
+      text-shadow: 1px 1px 2px $color-main-light;
+      padding-bottom: 20px;
+      text-decoration: underline;
+    }
+  }
 }
 
 @media screen and (max-width: 1140px) {
