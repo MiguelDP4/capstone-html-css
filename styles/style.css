@@ -267,6 +267,23 @@ main {
       width: auto;
       image-rendering: pixelated; }
 
+.creative-commons {
+  background-color: #dadcde;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  height: 144px; }
+  .creative-commons div {
+    flex: 1;
+    height: auto;
+    margin: auto;
+    padding: 0 15px; }
+  .creative-commons .cc-logo {
+    text-align: right;
+    height: auto;
+    margin: auto; }
+
 @media screen and (max-width: 1140px) {
   .server-sections {
     width: 100%; } }
