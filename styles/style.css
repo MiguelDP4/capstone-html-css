@@ -283,6 +283,8 @@ main {
     text-align: right;
     height: auto;
     margin: auto; }
+  .creative-commons p {
+    font-family: "Lato"; }
 
 @media screen and (max-width: 1140px) {
   .server-sections {
