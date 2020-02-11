@@ -387,7 +387,7 @@ main {
     margin: 30px 0; }
     .membership-purchase h2 span {
       color: #ec5242; }
-  .membership-purchase p {
+  .membership-purchase p, .membership-purchase span, .membership-purchase a {
     font-family: "Lato"; }
   .membership-purchase .membership-selection {
     width: 70%;
