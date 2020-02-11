@@ -286,6 +286,78 @@ main {
   .creative-commons p {
     font-family: "Lato"; }
 
+.creative-commons-gray {
+  background-color: #3b3a4b;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  height: 144px; }
+  .creative-commons-gray div {
+    flex: 1;
+    height: auto;
+    margin: auto;
+    padding: 0 15px; }
+  .creative-commons-gray .cc-logo {
+    text-align: right;
+    height: auto;
+    margin: auto; }
+  .creative-commons-gray p {
+    font-family: "Lato";
+    color: #d3d3d3; }
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: center; }
+  .about-page div {
+    width: 85%;
+    margin: 0 auto; }
+  .about-page h1 {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    font-family: "Cocogoose";
+    color: #ec5242;
+    font-size: 48px; }
+  .about-page h2 {
+    font-family: "Lato";
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 45px; }
+  .about-page p {
+    font-family: "Lato";
+    color: #181a1f;
+    line-height: 1.8em;
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 80px; }
+    .about-page p a {
+      font-weight: bold;
+      color: #272a31; }
+  .about-page .microverse-logo {
+    padding-bottom: 60px; }
+  .about-page .previous-constructions {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .about-page .construction-container {
+    width: 450px;
+    height: 250px;
+    position: relative; }
+    .about-page .construction-container img {
+      width: 100%;
+      height: 100%; }
+    .about-page .construction-container h2 {
+      font-family: "Lato";
+      text-shadow: 2px 2px 4px #d3d3d3;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0); }
+
 @media screen and (max-width: 1140px) {
   .server-sections {
     width: 100%; } }
@@ -322,6 +394,11 @@ main {
         padding-left: 15px;
         padding-right: 15px; }
       .server-sections div p {
-        font-size: 14px; } }
+        font-size: 14px; }
+
+  .about-page div {
+    width: 100%; }
+  .about-page p {
+    width: 95%; } }
 
 /*# sourceMappingURL=style.css.map */
