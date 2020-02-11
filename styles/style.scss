@@ -410,6 +410,9 @@ main {
     height: auto;
     margin: auto;
   }
+  p {
+    font-family: $font-paragraphs;
+  }
 }
 
 @media screen and (max-width: 1140px) {
