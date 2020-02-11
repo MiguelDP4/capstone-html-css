@@ -184,6 +184,13 @@ main {
     border: solid 3px #ec5242;
     padding: 5px; }
 
+.join-button {
+  display: none; }
+
+.join-button:hover {
+  background-color: #742820;
+  text-decoration: none; }
+
 .featured-players {
   display: flex;
   flex-direction: column;
@@ -346,7 +353,8 @@ main {
   .about-page .construction-container {
     width: 450px;
     height: 250px;
-    position: relative; }
+    position: relative;
+    padding-bottom: 20px; }
     .about-page .construction-container img {
       width: 100%;
       height: 100%; }
@@ -395,6 +403,20 @@ main {
         padding-right: 15px; }
       .server-sections div p {
         font-size: 14px; }
+
+  .join-button {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #d3d3d3;
+    background-color: #ec5242;
+    width: 120px;
+    text-align: center;
+    align-self: center;
+    transition-property: background-color;
+    transition-duration: 0.1s; }
 
   .about-page div {
     width: 100%; }
