@@ -245,13 +245,15 @@ main {
   align-items: center;
   background: #3b3a4b; }
   .partners div {
-    flex: 1; }
+    flex: 1;
+    padding-bottom: 15px; }
     .partners div h1 {
       font-family: "Cocogoose";
       font-size: 32px;
-      color: #d3d3d3;
+      color: #ec5242;
       text-shadow: 1px 1px 2px #f07a6d;
       padding-bottom: 20px;
+      padding-top: 20px;
       text-decoration: underline; }
   .partners .partners-row {
     width: 90%;
@@ -294,6 +296,13 @@ main {
     .server-sections h2 {
       font-size: 18px; }
     .server-sections p {
-      font-size: 12px; } }
+      font-size: 12px; }
+    .server-sections div {
+      flex-direction: row; }
+      .server-sections div h2 {
+        padding-left: 15px;
+        padding-right: 15px; }
+      .server-sections div p {
+        font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */
