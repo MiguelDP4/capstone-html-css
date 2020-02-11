@@ -139,7 +139,9 @@ main {
   align-items: center;
   background: #0e0f11 url("../img/pattern-gray.svg"); }
   .games div {
-    flex: 1; }
+    flex: 1;
+    padding-top: 15px;
+    padding-bottom: 15px; }
   .games h1 {
     font-family: "ArcadeClassic";
     font-size: 48px;
@@ -149,9 +151,13 @@ main {
     font-size: 24px;
     color: #1a36c0;
     text-shadow: 1px 1px 2px #5d74d6; }
-  .games a {
+  .games div a {
+    text-decoration: none;
     font-family: "Pixelated";
     color: #d3d3d3; }
+  .games div a:hover {
+    text-decoration: underline #5d74d6;
+    cursor: pointer; }
   .games p {
     font-family: "pix PixelFJVerdana12pt";
     font-size: 8px;
@@ -179,6 +185,57 @@ main {
     background-color: #5d74d6;
     border: solid 3px #1a36c0;
     padding: 5px; }
+
+.featured-players {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px; }
+  .featured-players h1 {
+    font-family: "ArcadeClassic";
+    font-size: 48px;
+    color: #1a36c0;
+    text-shadow: 1px 1px 2px #5d74d6;
+    padding-bottom: 20px;
+    text-decoration: underline; }
+  .featured-players .players {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .featured-players .players .player {
+      display: flex;
+      flex-direction: row;
+      width: 450px;
+      padding: 5px; }
+      .featured-players .players .player div:first-of-type {
+        flex: 1; }
+      .featured-players .players .player div:last-of-type {
+        flex: 2;
+        margin-left: 12px; }
+      .featured-players .players .player img {
+        width: 100%;
+        height: auto;
+        image-rendering: pixelated; }
+      .featured-players .players .player h2 {
+        font-family: "ArcadeClassic";
+        font-size: 24px;
+        color: #1a36c0;
+        text-shadow: 1px 1px 2px #5d74d6;
+        margin-bottom: 10px; }
+      .featured-players .players .player p:first-of-type {
+        font-family: "pix PixelFJVerdana12pt";
+        font-size: 8px;
+        line-height: 1.8em;
+        color: #1a36c0;
+        margin-bottom: 10px; }
+      .featured-players .players .player p:last-of-type {
+        font-family: "pix PixelFJVerdana12pt";
+        font-size: 8px;
+        line-height: 1.8em;
+        color: #0e0f11; }
 
 @media screen and (max-width: 1140px) {
   .server-sections {
