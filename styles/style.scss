@@ -8,9 +8,9 @@ $color-light: #d3d3d3;
 $color-background: #dadcde;
 $color-background-dark: #3b3a4b;
 
-$font-links: 'Lato';
-$font-titles: 'Cocogoose';
-$font-paragraphs: 'Lato';
+$font-links: 'Lato', Arial, sans-serif;
+$font-titles: 'Cocogoose', Arial, sans-serif;
+$font-paragraphs: 'Lato', Arial, sans-serif;
 
 $font-paragraph-size: 14px;
 $font-paragraphs-size-small: 12px;
@@ -84,9 +84,9 @@ header {
 
   nav {
     background-color: $color-light;
-    -webkit-box-shadow: 0px 0px 6px 0px $color-secondary-light;
-    -moz-box-shadow: 0px 0px 6px 0px $color-secondary-light;
-    box-shadow: 0px 0px 6px 0px $color-secondary-light;
+    -webkit-box-shadow: 0 0 6px 0 $color-secondary-light;
+    -moz-box-shadow: 0 0 6px 0 $color-secondary-light;
+    box-shadow: 0 0 6px 0 $color-secondary-light;
 
     .white-nav {
       display: flex;
