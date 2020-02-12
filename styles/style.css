@@ -93,6 +93,12 @@ header nav div a {
   margin: 0 auto;
 }
 
+.membership-purchase p,
+.membership-purchase span,
+.membership-purchase a {
+  font-family: "Lato", Arial, sans-serif;
+}
+
 header a:hover,
 header div:hover {
   color: #434957;
@@ -177,6 +183,16 @@ main .welcome {
   padding-bottom: 45px;
 }
 
+.membership-purchase h2 {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  padding: 5px 0;
+  margin: 30px 0;
+}
+
 main .welcome h2 {
   font-family: "Cocogoose", Arial, sans-serif;
   font-size: 24px;
@@ -206,6 +222,12 @@ main .welcome h2 {
   font-size: 48px;
 }
 
+.memberships-title h1 {
+  font-family: "Cocogoose", Arial, sans-serif;
+  font-size: 48px;
+  padding-top: 50px;
+}
+
 main .welcome h1 {
   font-family: "Cocogoose", Arial, sans-serif;
   font-size: 48px;
@@ -225,15 +247,6 @@ main .welcome h1 {
 .creative-commons-gray p {
   font-family: "Lato", Arial, sans-serif;
   color: #d3d3d3;
-}
-
-.about-page p {
-  font-family: "Lato", Arial, sans-serif;
-  color: #181a1f;
-  line-height: 1.8em;
-  width: 85%;
-  margin: 0 auto;
-  padding-bottom: 80px;
 }
 
 main .welcome p {
@@ -281,17 +294,17 @@ main .welcome::after {
   margin-right: 3vw;
 }
 
-.games div a:hover {
-  text-decoration: underline #f07a6d;
-  cursor: pointer;
-}
-
 .white-nav-selectors a:nth-child(6) {
   padding: 8px 16px;
   border: 3px solid #ec5242;
   background-color: #d3d3d3;
   transition-duration: 0.4s;
   transition-property: padding, color, border-color;
+}
+
+.games div a:hover {
+  text-decoration: underline #f07a6d;
+  cursor: pointer;
 }
 
 .white-nav-selectors a:nth-child(6):hover {
@@ -387,6 +400,15 @@ main .welcome::after {
 
 .featured-players .players .player img:hover {
   transform: scale(1.5);
+}
+
+.about-page .construction-container h2 {
+  font-family: "Lato", Arial, sans-serif;
+  text-shadow: 2px 2px 4px #d3d3d3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .featured-players .players .player h2 {
@@ -492,23 +514,8 @@ main .welcome::after {
   padding-bottom: 20px;
 }
 
-.about-page .construction-container h2 {
-  font-family: "Lato", Arial, sans-serif;
-  text-shadow: 2px 2px 4px #d3d3d3;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
 .memberships-title {
   text-align: center;
-}
-
-.memberships-title h1 {
-  font-family: "Cocogoose", Arial, sans-serif;
-  font-size: 48px;
-  padding-top: 50px;
 }
 
 .membership-purchase {
@@ -517,24 +524,8 @@ main .welcome::after {
   text-align: center;
 }
 
-.membership-purchase h2 {
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
-  padding: 5px 0;
-  margin: 30px 0;
-}
-
 .membership-purchase h2 span {
   color: #ec5242;
-}
-
-.membership-purchase p,
-.membership-purchase span,
-.membership-purchase a {
-  font-family: "Lato", Arial, sans-serif;
 }
 
 .membership-purchase .membership-selection {
@@ -649,9 +640,22 @@ main .welcome::after {
     flex-direction: row;
   }
 
+  .membership-purchase h2 {
+    font-size: 18px;
+  }
+
   .server-sections div h2 {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .about-page p {
+    font-family: "Lato", Arial, sans-serif;
+    color: #181a1f;
+    line-height: 1.8em;
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 80px;
   }
 
   .server-sections div p {
@@ -695,10 +699,6 @@ main .welcome::after {
 
   .memberships-title h1 {
     font-size: 24px;
-  }
-
-  .membership-purchase h2 {
-    font-size: 18px;
   }
 
   .creative-commons,
