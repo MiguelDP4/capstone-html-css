@@ -8,9 +8,15 @@ $color-light: #d3d3d3;
 $color-background: #dadcde;
 $color-background-dark: #3b3a4b;
 
-$font-links: 'Lato', Arial, sans-serif;
-$font-titles: 'Cocogoose', Arial, sans-serif;
-$font-paragraphs: 'Lato', Arial, sans-serif;
+$font-links: 'Lato',
+Arial,
+sans-serif;
+$font-titles: 'Cocogoose',
+Arial,
+sans-serif;
+$font-paragraphs: 'Lato',
+Arial,
+sans-serif;
 
 $font-paragraph-size: 14px;
 $font-paragraphs-size-small: 12px;
@@ -282,13 +288,8 @@ main {
   }
 }
 
-.join-button {
+.join-button, .about-button {
   display: none;
-}
-
-.join-button:hover {
-  background-color: $color-main-dark;
-  text-decoration: none;
 }
 
 .featured-players {
@@ -393,6 +394,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     div {
       text-align: center;
@@ -562,15 +564,19 @@ main {
     }
   }
 
-  p, span, a {
+  p,
+  span,
+  a {
     font-family: $font-paragraphs;
   }
 
   .membership-selection {
-    width: 70%;
+    width: 80%;
     border: dashed $color-main 3px;
     padding: 25px;
     margin: 0 auto;
+    overflow-x: auto;
+    overflow-y: hidden;
 
     table {
       font-family: $font-paragraphs;
@@ -597,6 +603,7 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 40px;
+    margin-top: 40px;
   }
 
   .purchase-button {
@@ -615,6 +622,7 @@ main {
     text-decoration: none;
     margin-bottom: 40px;
   }
+
   .purchase-button:hover {
     background-color: $color-main-dark;
     text-decoration: none;
@@ -689,7 +697,7 @@ main {
     }
   }
 
-  .join-button {
+  .join-button, .about-button {
     display: block;
     padding-left: 15px;
     padding-right: 15px;
@@ -702,6 +710,16 @@ main {
     align-self: center;
     transition-property: background-color;
     transition-duration: $transition-fast;
+    text-decoration: none;
+  }
+
+  .about-button {
+    margin-top: 10px;
+  }
+
+  .join-button:hover, .about-button:hover {
+    background-color: $color-main-dark;
+    text-decoration: none;
   }
 
   .about-page {
@@ -711,6 +729,26 @@ main {
 
     p {
       width: 95%;
+    }
+  }
+
+  .memberships-title {
+    h1 {
+      font-size: $font-medium-title-size;
+    }
+  }
+  .membership-purchase {
+    h2 {
+      font-size: $font-small-title-size;
+    }
+  }
+
+  .creative-commons, .creative-commons-gray {
+    flex-direction: column;
+
+    .cc-logo {
+      padding: 15px 0 0 0;
+      margin: 0 auto;
     }
   }
 }
