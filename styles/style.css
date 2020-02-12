@@ -32,16 +32,72 @@ header a {
   transition-property: color;
 }
 
-header a:hover,
-header div:hover {
+header div {
+  background-color: #272a31;
+  color: #d3d3d3;
+}
+
+header nav div {
+  background-color: #d3d3d3;
+}
+
+header nav div a {
   color: #434957;
   transition-duration: 0.4s;
   transition-property: color;
 }
 
-header div {
-  background-color: #272a31;
-  color: #d3d3d3;
+.white-nav-selectors a {
+  margin-left: 5vw;
+}
+
+.games div {
+  flex: 1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.server-sections div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  background-color: rgba(200, 200, 200, 0.3);
+  padding: 8px;
+  margin: 8px;
+  transition-property: background-color;
+  transition-duration: 0.4s;
+}
+
+.partners div {
+  flex: 1;
+  padding-bottom: 15px;
+}
+
+.creative-commons div {
+  flex: 1;
+  height: auto;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.creative-commons-gray div {
+  flex: 1;
+  height: auto;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.about-page div {
+  width: 85%;
+  margin: 0 auto;
+}
+
+header a:hover,
+header div:hover {
+  color: #434957;
+  transition-duration: 0.4s;
+  transition-property: color;
 }
 
 header .black-nav-selectors {
@@ -68,18 +124,19 @@ header nav .white-nav {
   align-items: center;
 }
 
-header nav div {
-  background-color: #d3d3d3;
-}
-
-header nav div a {
-  color: #434957;
-  transition-duration: 0.4s;
-  transition-property: color;
-}
-
 header nav div a img {
   margin-right: 4px;
+}
+
+.games div a {
+  text-decoration: none;
+  font-family: "Lato", Arial, sans-serif;
+  color: #d3d3d3;
+}
+
+.about-page p a {
+  font-weight: bold;
+  color: #272a31;
 }
 
 header nav div a:hover {
@@ -106,14 +163,77 @@ main .welcome {
   height: 512px;
 }
 
+.games h2 {
+  font-family: "Cocogoose", Arial, sans-serif;
+  font-size: 18px;
+  color: #ec5242;
+  text-shadow: 1px 1px 2px #f07a6d;
+}
+
+.about-page h2 {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 45px;
+}
+
 main .welcome h2 {
   font-family: "Cocogoose", Arial, sans-serif;
   font-size: 24px;
 }
 
+.games h1 {
+  font-family: "Cocogoose", Arial, sans-serif;
+  font-size: 32px;
+  color: #d3d3d3;
+}
+
+.featured-players h1 {
+  font-family: "Cocogoose", Arial, sans-serif;
+  font-size: 32px;
+  color: #ec5242;
+  text-shadow: 1px 1px 2px #f07a6d;
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+.about-page h1 {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  font-family: "Cocogoose", Arial, sans-serif;
+  color: #ec5242;
+  font-size: 48px;
+}
+
 main .welcome h1 {
   font-family: "Cocogoose", Arial, sans-serif;
   font-size: 48px;
+}
+
+.games p {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.8em;
+  color: #d3d3d3;
+}
+
+.creative-commons p {
+  font-family: "Lato", Arial, sans-serif;
+}
+
+.creative-commons-gray p {
+  font-family: "Lato", Arial, sans-serif;
+  color: #d3d3d3;
+}
+
+.about-page p {
+  font-family: "Lato", Arial, sans-serif;
+  color: #181a1f;
+  line-height: 1.8em;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 main .welcome p {
@@ -161,8 +281,9 @@ main .welcome::after {
   margin-right: 3vw;
 }
 
-.white-nav-selectors a {
-  margin-left: 5vw;
+.games div a:hover {
+  text-decoration: underline #f07a6d;
+  cursor: pointer;
 }
 
 .white-nav-selectors a:nth-child(6) {
@@ -187,59 +308,10 @@ main .welcome::after {
   background: #272a31 url("../img/pattern-gray.svg");
 }
 
-.games div {
-  flex: 1;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.games h1 {
-  font-family: "Cocogoose", Arial, sans-serif;
-  font-size: 32px;
-  color: #d3d3d3;
-}
-
-.games h2 {
-  font-family: "Cocogoose", Arial, sans-serif;
-  font-size: 18px;
-  color: #ec5242;
-  text-shadow: 1px 1px 2px #f07a6d;
-}
-
-.games div a {
-  text-decoration: none;
-  font-family: "Lato", Arial, sans-serif;
-  color: #d3d3d3;
-}
-
-.games div a:hover {
-  text-decoration: underline #f07a6d;
-  cursor: pointer;
-}
-
-.games p {
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 12px;
-  line-height: 1.8em;
-  color: #d3d3d3;
-}
-
 .server-sections {
   display: flex;
   flex-direction: row;
   width: 80%;
-}
-
-.server-sections div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: justify;
-  background-color: rgba(200, 200, 200, 0.3);
-  padding: 8px;
-  margin: 8px;
-  transition-property: background-color;
-  transition-duration: 0.4s;
 }
 
 .server-sections div img {
@@ -265,15 +337,6 @@ main .welcome::after {
   padding-top: 30px;
 }
 
-.featured-players h1 {
-  font-family: "Cocogoose", Arial, sans-serif;
-  font-size: 32px;
-  color: #ec5242;
-  text-shadow: 1px 1px 2px #f07a6d;
-  padding-bottom: 20px;
-  text-decoration: underline;
-}
-
 .featured-players .players {
   width: 80%;
   margin: 0 auto;
@@ -290,6 +353,10 @@ main .welcome::after {
   padding: 5px;
 }
 
+.partners .partners-row div {
+  text-align: center;
+}
+
 .featured-players .players .player div:first-of-type {
   flex: 1;
 }
@@ -297,6 +364,17 @@ main .welcome::after {
 .featured-players .players .player div:last-of-type {
   flex: 2;
   margin-left: 12px;
+}
+
+.partners .partners-row img {
+  height: 40px;
+  width: auto;
+  image-rendering: pixelated;
+}
+
+.about-page .construction-container img {
+  width: 100%;
+  height: 100%;
 }
 
 .featured-players .players .player img {
@@ -341,11 +419,6 @@ main .welcome::after {
   background: #3b3a4b;
 }
 
-.partners div {
-  flex: 1;
-  padding-bottom: 15px;
-}
-
 .partners div h1 {
   font-family: "Cocogoose", Arial, sans-serif;
   font-size: 32px;
@@ -364,16 +437,6 @@ main .welcome::after {
   flex-wrap: wrap;
 }
 
-.partners .partners-row div {
-  text-align: center;
-}
-
-.partners .partners-row img {
-  height: 40px;
-  width: auto;
-  image-rendering: pixelated;
-}
-
 .creative-commons {
   background-color: #dadcde;
   display: flex;
@@ -383,21 +446,10 @@ main .welcome::after {
   height: 144px;
 }
 
-.creative-commons div {
-  flex: 1;
-  height: auto;
-  margin: auto;
-  padding: 0 15px;
-}
-
 .creative-commons .cc-logo {
   text-align: right;
   height: auto;
   margin: auto;
-}
-
-.creative-commons p {
-  font-family: "Lato", Arial, sans-serif;
 }
 
 .creative-commons-gray {
@@ -409,22 +461,10 @@ main .welcome::after {
   height: 144px;
 }
 
-.creative-commons-gray div {
-  flex: 1;
-  height: auto;
-  margin: auto;
-  padding: 0 15px;
-}
-
 .creative-commons-gray .cc-logo {
   text-align: right;
   height: auto;
   margin: auto;
-}
-
-.creative-commons-gray p {
-  font-family: "Lato", Arial, sans-serif;
-  color: #d3d3d3;
 }
 
 .about-page {
@@ -432,41 +472,6 @@ main .welcome::after {
   flex-direction: column;
   align-items: baseline;
   text-align: center;
-}
-
-.about-page div {
-  width: 85%;
-  margin: 0 auto;
-}
-
-.about-page h1 {
-  padding-top: 80px;
-  padding-bottom: 40px;
-  margin: 0 auto;
-  font-family: "Cocogoose", Arial, sans-serif;
-  color: #ec5242;
-  font-size: 48px;
-}
-
-.about-page h2 {
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  padding-bottom: 45px;
-}
-
-.about-page p {
-  font-family: "Lato", Arial, sans-serif;
-  color: #181a1f;
-  line-height: 1.8em;
-  width: 85%;
-  margin: 0 auto;
-  padding-bottom: 80px;
-}
-
-.about-page p a {
-  font-weight: bold;
-  color: #272a31;
 }
 
 .about-page .microverse-logo {
@@ -485,11 +490,6 @@ main .welcome::after {
   height: 250px;
   position: relative;
   padding-bottom: 20px;
-}
-
-.about-page .construction-container img {
-  width: 100%;
-  height: 100%;
 }
 
 .about-page .construction-container h2 {
