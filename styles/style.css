@@ -37,6 +37,49 @@ header div {
   color: #d3d3d3;
 }
 
+header nav div {
+  background-color: #d3d3d3;
+}
+
+header nav div a {
+  color: #434957;
+  transition-duration: 0.4s;
+  transition-property: color;
+}
+
+.white-nav-selectors a {
+  margin-left: 5vw;
+}
+
+.games div a {
+  text-decoration: none;
+  font-family: "Lato", Arial, sans-serif;
+  color: #d3d3d3;
+}
+
+.games div {
+  flex: 1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.server-sections div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  background-color: rgba(200, 200, 200, 0.3);
+  padding: 8px;
+  margin: 8px;
+  transition-property: background-color;
+  transition-duration: 0.4s;
+}
+
+.partners div {
+  flex: 1;
+  padding-bottom: 15px;
+}
+
 header a:hover,
 header div:hover {
   color: #434957;
@@ -68,16 +111,6 @@ header nav .white-nav {
   align-items: center;
 }
 
-header nav div {
-  background-color: #d3d3d3;
-}
-
-header nav div a {
-  color: #434957;
-  transition-duration: 0.4s;
-  transition-property: color;
-}
-
 header nav div a img {
   margin-right: 4px;
 }
@@ -106,15 +139,44 @@ main .welcome {
   height: 512px;
 }
 
+.games h2 {
+  font-family: "Cocogoose", Arial, sans-serif;
+  font-size: 18px;
+  color: #ec5242;
+  text-shadow: 1px 1px 2px #f07a6d;
+}
+
 main .welcome h2 {
   font-family: "Cocogoose", Arial, sans-serif;
   font-size: 24px;
+}
+
+.games h1 {
+  font-family: "Cocogoose", Arial, sans-serif;
+  font-size: 32px;
+  color: #d3d3d3;
+}
+
+.featured-players h1 {
+  font-family: "Cocogoose", Arial, sans-serif;
+  font-size: 32px;
+  color: #ec5242;
+  text-shadow: 1px 1px 2px #f07a6d;
+  padding-bottom: 20px;
+  text-decoration: underline;
 }
 
 main .welcome h1 {
   font-family: "Cocogoose", Arial, sans-serif;
   font-size: 48px;
   line-height: 1.4em;
+}
+
+.games p {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.8em;
+  color: #d3d3d3;
 }
 
 main .welcome p {
@@ -162,16 +224,17 @@ main .welcome::after {
   margin-right: 3vw;
 }
 
-.white-nav-selectors a {
-  margin-left: 5vw;
-}
-
 .white-nav-selectors a:nth-child(6) {
   padding: 8px 16px;
   border: 3px solid #ec5242;
   background-color: #d3d3d3;
   transition-duration: 0.4s;
   transition-property: padding, color, border-color;
+}
+
+.games div a:hover {
+  text-decoration: underline #f07a6d;
+  cursor: pointer;
 }
 
 .white-nav-selectors a:nth-child(6):hover {
@@ -188,59 +251,10 @@ main .welcome::after {
   background: #272a31 url("../img/pattern-gray.svg");
 }
 
-.games div {
-  flex: 1;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.games h1 {
-  font-family: "Cocogoose", Arial, sans-serif;
-  font-size: 32px;
-  color: #d3d3d3;
-}
-
-.games h2 {
-  font-family: "Cocogoose", Arial, sans-serif;
-  font-size: 18px;
-  color: #ec5242;
-  text-shadow: 1px 1px 2px #f07a6d;
-}
-
-.games div a {
-  text-decoration: none;
-  font-family: "Lato", Arial, sans-serif;
-  color: #d3d3d3;
-}
-
-.games div a:hover {
-  text-decoration: underline #f07a6d;
-  cursor: pointer;
-}
-
-.games p {
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 12px;
-  line-height: 1.8em;
-  color: #d3d3d3;
-}
-
 .server-sections {
   display: flex;
   flex-direction: row;
   width: 80%;
-}
-
-.server-sections div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: justify;
-  background-color: rgba(200, 200, 200, 0.3);
-  padding: 8px;
-  margin: 8px;
-  transition-property: background-color;
-  transition-duration: 0.4s;
 }
 
 .server-sections div img {
@@ -266,15 +280,6 @@ main .welcome::after {
   padding-top: 30px;
 }
 
-.featured-players h1 {
-  font-family: "Cocogoose", Arial, sans-serif;
-  font-size: 32px;
-  color: #ec5242;
-  text-shadow: 1px 1px 2px #f07a6d;
-  padding-bottom: 20px;
-  text-decoration: underline;
-}
-
 .featured-players .players {
   width: 80%;
   margin: 0 auto;
@@ -289,6 +294,10 @@ main .welcome::after {
   flex-direction: row;
   width: 450px;
   padding: 5px;
+}
+
+.partners .partners-row div {
+  text-align: center;
 }
 
 .featured-players .players .player div:first-of-type {
@@ -342,11 +351,6 @@ main .welcome::after {
   background: #3b3a4b;
 }
 
-.partners div {
-  flex: 1;
-  padding-bottom: 15px;
-}
-
 .partners div h1 {
   font-family: "Cocogoose", Arial, sans-serif;
   font-size: 32px;
@@ -363,10 +367,6 @@ main .welcome::after {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.partners .partners-row div {
-  text-align: center;
 }
 
 .partners .partners-row img {
