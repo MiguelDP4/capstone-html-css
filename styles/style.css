@@ -51,6 +51,12 @@ header nav div a {
   margin-left: 5vw;
 }
 
+.membership-purchase p,
+.membership-purchase span,
+.membership-purchase a {
+  font-family: "Lato", Arial, sans-serif;
+}
+
 .games div a {
   text-decoration: none;
   font-family: "Lato", Arial, sans-serif;
@@ -78,6 +84,25 @@ header nav div a {
 .partners div {
   flex: 1;
   padding-bottom: 15px;
+}
+
+.creative-commons div {
+  flex: 1;
+  height: auto;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.creative-commons-gray div {
+  flex: 1;
+  height: auto;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.about-page div {
+  width: 85%;
+  margin: 0 auto;
 }
 
 header a:hover,
@@ -115,6 +140,11 @@ header nav div a img {
   margin-right: 4px;
 }
 
+.about-page p a {
+  font-weight: bold;
+  color: #272a31;
+}
+
 header nav div a:hover {
   color: #ec5242;
   transition-duration: 0.4s;
@@ -146,6 +176,23 @@ main .welcome {
   text-shadow: 1px 1px 2px #f07a6d;
 }
 
+.about-page h2 {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 45px;
+}
+
+.membership-purchase h2 {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  padding: 5px 0;
+  margin: 30px 0;
+}
+
 main .welcome h2 {
   font-family: "Cocogoose", Arial, sans-serif;
   font-size: 24px;
@@ -166,6 +213,21 @@ main .welcome h2 {
   text-decoration: underline;
 }
 
+.about-page h1 {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  font-family: "Cocogoose", Arial, sans-serif;
+  color: #ec5242;
+  font-size: 48px;
+}
+
+.memberships-title h1 {
+  font-family: "Cocogoose", Arial, sans-serif;
+  font-size: 48px;
+  padding-top: 50px;
+}
+
 main .welcome h1 {
   font-family: "Cocogoose", Arial, sans-serif;
   font-size: 48px;
@@ -177,6 +239,24 @@ main .welcome h1 {
   font-size: 12px;
   line-height: 1.8em;
   color: #d3d3d3;
+}
+
+.creative-commons p {
+  font-family: "Lato", Arial, sans-serif;
+}
+
+.creative-commons-gray p {
+  font-family: "Lato", Arial, sans-serif;
+  color: #d3d3d3;
+}
+
+.about-page p {
+  font-family: "Lato", Arial, sans-serif;
+  color: #181a1f;
+  line-height: 1.8em;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 main .welcome p {
@@ -309,6 +389,17 @@ main .welcome::after {
   margin-left: 12px;
 }
 
+.partners .partners-row img {
+  height: 40px;
+  width: auto;
+  image-rendering: pixelated;
+}
+
+.about-page .construction-container img {
+  width: 100%;
+  height: 100%;
+}
+
 .featured-players .players .player img {
   width: 100%;
   height: auto;
@@ -319,6 +410,15 @@ main .welcome::after {
 
 .featured-players .players .player img:hover {
   transform: scale(1.5);
+}
+
+.about-page .construction-container h2 {
+  font-family: "Lato", Arial, sans-serif;
+  text-shadow: 2px 2px 4px #d3d3d3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .featured-players .players .player h2 {
@@ -369,12 +469,6 @@ main .welcome::after {
   flex-wrap: wrap;
 }
 
-.partners .partners-row img {
-  height: 40px;
-  width: auto;
-  image-rendering: pixelated;
-}
-
 .creative-commons {
   background-color: #dadcde;
   display: flex;
@@ -384,21 +478,10 @@ main .welcome::after {
   height: 144px;
 }
 
-.creative-commons div {
-  flex: 1;
-  height: auto;
-  margin: auto;
-  padding: 0 15px;
-}
-
 .creative-commons .cc-logo {
   text-align: right;
   height: auto;
   margin: auto;
-}
-
-.creative-commons p {
-  font-family: "Lato", Arial, sans-serif;
 }
 
 .creative-commons-gray {
@@ -410,22 +493,10 @@ main .welcome::after {
   height: 144px;
 }
 
-.creative-commons-gray div {
-  flex: 1;
-  height: auto;
-  margin: auto;
-  padding: 0 15px;
-}
-
 .creative-commons-gray .cc-logo {
   text-align: right;
   height: auto;
   margin: auto;
-}
-
-.creative-commons-gray p {
-  font-family: "Lato", Arial, sans-serif;
-  color: #d3d3d3;
 }
 
 .about-page {
@@ -433,41 +504,6 @@ main .welcome::after {
   flex-direction: column;
   align-items: baseline;
   text-align: center;
-}
-
-.about-page div {
-  width: 85%;
-  margin: 0 auto;
-}
-
-.about-page h1 {
-  padding-top: 80px;
-  padding-bottom: 40px;
-  margin: 0 auto;
-  font-family: "Cocogoose", Arial, sans-serif;
-  color: #ec5242;
-  font-size: 48px;
-}
-
-.about-page h2 {
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  padding-bottom: 45px;
-}
-
-.about-page p {
-  font-family: "Lato", Arial, sans-serif;
-  color: #181a1f;
-  line-height: 1.8em;
-  width: 85%;
-  margin: 0 auto;
-  padding-bottom: 80px;
-}
-
-.about-page p a {
-  font-weight: bold;
-  color: #272a31;
 }
 
 .about-page .microverse-logo {
@@ -488,28 +524,8 @@ main .welcome::after {
   padding-bottom: 20px;
 }
 
-.about-page .construction-container img {
-  width: 100%;
-  height: 100%;
-}
-
-.about-page .construction-container h2 {
-  font-family: "Lato", Arial, sans-serif;
-  text-shadow: 2px 2px 4px #d3d3d3;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
 .memberships-title {
   text-align: center;
-}
-
-.memberships-title h1 {
-  font-family: "Cocogoose", Arial, sans-serif;
-  font-size: 48px;
-  padding-top: 50px;
 }
 
 .position-sticky-left {
@@ -524,24 +540,8 @@ main .welcome::after {
   text-align: center;
 }
 
-.membership-purchase h2 {
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
-  padding: 5px 0;
-  margin: 30px 0;
-}
-
 .membership-purchase h2 span {
   color: #ec5242;
-}
-
-.membership-purchase p,
-.membership-purchase span,
-.membership-purchase a {
-  font-family: "Lato", Arial, sans-serif;
 }
 
 .membership-purchase .membership-selection {
@@ -657,9 +657,17 @@ main .welcome::after {
     flex-direction: row;
   }
 
+  .membership-purchase h2 {
+    font-size: 18px;
+  }
+
   .server-sections div h2 {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .about-page p {
+    width: 95%;
   }
 
   .server-sections div p {
@@ -697,16 +705,8 @@ main .welcome::after {
     width: 100%;
   }
 
-  .about-page p {
-    width: 95%;
-  }
-
   .memberships-title h1 {
     font-size: 24px;
-  }
-
-  .membership-purchase h2 {
-    font-size: 18px;
   }
 
   .creative-commons,
