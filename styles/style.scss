@@ -8,15 +8,9 @@ $color-light: #d3d3d3;
 $color-background: #dadcde;
 $color-background-dark: #3b3a4b;
 
-$font-links: 'Lato',
-  Arial,
-  sans-serif;
-$font-titles: 'Cocogoose',
-  Arial,
-  sans-serif;
-$font-paragraphs: 'Lato',
-  Arial,
-  sans-serif;
+$font-links: 'Lato', Arial, sans-serif;
+$font-titles: 'Cocogoose', Arial, sans-serif;
+$font-paragraphs: 'Lato', Arial, sans-serif;
 
 $font-paragraph-size: 14px;
 $font-paragraphs-size-small: 12px;
@@ -52,6 +46,10 @@ body {
   background-color: $color-background;
 }
 
+.white-nav-selectors a {
+  margin-left: 5vw;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -65,16 +63,16 @@ header {
     transition-property: color;
   }
 
+  div {
+    background-color: $color-secondary;
+    color: $color-light;
+  }
+
   a:hover,
   div:hover {
     color: $color-secondary-light;
     transition-duration: $transition-medium;
     transition-property: color;
-  }
-
-  div {
-    background-color: $color-secondary;
-    color: $color-light;
   }
 
   .black-nav-selectors {
@@ -194,10 +192,6 @@ main {
 
 .white-nav-selectors {
   margin-right: 3vw;
-}
-
-.white-nav-selectors a {
-  margin-left: 5vw;
 }
 
 .white-nav-selectors a:nth-child(6) {
