@@ -34,4 +34,4 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
-Author of the template I followed is [Cindy Shin](https://www.behance.net/adagio07) and the template can be found [here](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+Author of the template I followed is [Cindy Shin](https://www.behance.net/adagio07) and the template can be found [here](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
