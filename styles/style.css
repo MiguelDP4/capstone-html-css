@@ -328,7 +328,7 @@ main .welcome::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #272a31 url("../img/pattern-gray.svg");
+  background: #363741 url("../img/pattern-gray.svg");
 }
 
 .server-sections {
