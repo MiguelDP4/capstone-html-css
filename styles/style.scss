@@ -8,20 +8,13 @@ $color-light: #d3d3d3;
 $color-background: #dadcde;
 $color-background-dark: #3b3a4b;
 
-$font-links: 'Lato',
-Arial,
-sans-serif;
-$font-titles: 'Cocogoose',
-Arial,
-sans-serif;
-$font-paragraphs: 'Lato',
-Arial,
-sans-serif;
+$font-links: 'Lato', Arial, sans-serif;
+$font-titles: 'Cocogoose', Arial, sans-serif;
+$font-paragraphs: 'Lato', Arial, sans-serif;
 
 $font-paragraph-size: 14px;
 $font-paragraphs-size-small: 12px;
 $font-paragraphs-size-extra-small: 8px;
-
 
 $font-extra-small-title-size: 12px;
 $font-small-title-size: 18px;
@@ -147,6 +140,7 @@ main {
     h1 {
       font-family: $font-titles;
       font-size: $font-huge-title-size;
+      line-height: 1.4em;
     }
 
     p {
@@ -288,7 +282,8 @@ main {
   }
 }
 
-.join-button, .about-button {
+.join-button,
+.about-button {
   display: none;
 }
 
@@ -545,6 +540,12 @@ main {
   }
 }
 
+.position-sticky-left {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
 .membership-purchase {
   display: flex;
   flex-direction: column;
@@ -573,9 +574,9 @@ main {
   .membership-selection {
     width: 80%;
     border: dashed $color-main 3px;
-    padding: 25px;
     margin: 0 auto;
-    overflow-x: auto;
+    padding: 24px 0;
+    overflow-x: scroll;
     overflow-y: hidden;
 
     table {
@@ -584,6 +585,7 @@ main {
 
       td {
         padding: 6px 0;
+        background-color: $color-background;
       }
 
       .pricetag {
@@ -628,7 +630,6 @@ main {
     text-decoration: none;
   }
 }
-
 
 @media screen and (max-width: 1140px) {
   .server-sections {
@@ -697,7 +698,8 @@ main {
     }
   }
 
-  .join-button, .about-button {
+  .join-button,
+  .about-button {
     display: block;
     padding-left: 15px;
     padding-right: 15px;
@@ -717,7 +719,8 @@ main {
     margin-top: 10px;
   }
 
-  .join-button:hover, .about-button:hover {
+  .join-button:hover,
+  .about-button:hover {
     background-color: $color-main-dark;
     text-decoration: none;
   }
@@ -737,13 +740,15 @@ main {
       font-size: $font-medium-title-size;
     }
   }
+
   .membership-purchase {
     h2 {
       font-size: $font-small-title-size;
     }
   }
 
-  .creative-commons, .creative-commons-gray {
+  .creative-commons,
+  .creative-commons-gray {
     flex-direction: column;
 
     .cc-logo {
