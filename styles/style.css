@@ -32,16 +32,16 @@ header a {
   transition-property: color;
 }
 
+header div {
+  background-color: #272a31;
+  color: #d3d3d3;
+}
+
 header a:hover,
 header div:hover {
   color: #434957;
   transition-duration: 0.4s;
   transition-property: color;
-}
-
-header div {
-  background-color: #272a31;
-  color: #d3d3d3;
 }
 
 header .black-nav-selectors {
@@ -720,5 +720,3 @@ main .welcome::after {
     margin: 0 auto;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
