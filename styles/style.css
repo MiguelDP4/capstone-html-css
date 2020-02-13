@@ -155,6 +155,10 @@ header nav div a:hover {
   display: none;
 }
 
+.menu-icon:hover .dropdown-content {
+  display: block;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -628,8 +632,30 @@ main .welcome::after {
     display: none;
   }
 
-  .white-nav-selectors a:last-of-type {
-    display: inline;
+  .menu-button {
+    background: none;
+    background-color: #d3d3d3;
+    border: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    background-color: #d3d3d3;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #272a31;
+    padding: 12px 16px;
+    margin: 5px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .menu-icon {
+    display: inline-block;
   }
 
   .menu-icon svg {
