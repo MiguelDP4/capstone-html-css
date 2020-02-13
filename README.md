@@ -2,6 +2,9 @@
 
 > The purpose of this project is to demonstrate my mastery of the HTML and CSS concepts learned along the first seven projects.
 
+![screenshot](./main-screenshot.png)
+![screenshot](./mobile-screenshot.png)
+
 ## Built With
 
 - HTML
