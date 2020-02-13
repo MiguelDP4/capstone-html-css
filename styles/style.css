@@ -155,6 +155,10 @@ header nav div a:hover {
   display: none;
 }
 
+.menu-icon:hover .dropdown-content {
+  display: block;
+}
+
 main {
   display: flex;
   flex-direction: column;
