@@ -15,6 +15,8 @@
 
 [Live Demo Link](https://raw.githack.com/MiguelDP4/capstone-html-css/developing/index.html)
 
+## Project Showcase
+
 [Project showcase on youtube](https://www.youtube.com/watch?v=ayUNlcpEHYw)
 
 ## Getting Started
